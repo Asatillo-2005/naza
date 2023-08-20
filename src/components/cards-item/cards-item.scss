@@ -1,0 +1,101 @@
+.cards-item-box {
+    padding-top: 74px;
+    padding-bottom: 50.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards-item-content {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    .cards-item-content-title {
+        position: absolute;
+        top: -50px;
+        left: 10%;
+        color: #838383;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .cards-item-content-items {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 54.45px;
+        padding-top: 15.1px;
+        padding-bottom: 32.65px;
+        padding-left: 21.96px;
+        padding-right: 21px;
+        border-radius: 30px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        position: relative;
+    }
+}
+
+.cards-item-content-items-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 26px;
+
+    .cards-item-content-items-about-nc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 105.04px;
+    }
+}
+
+.cards-item-content-items-about-nc-name {
+    color: #1C1C27;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cards-item-content-items-about-nc-cost {
+    color: #FFA542;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cards-item-content-items-about-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #838383;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cards-item-content-items-heart {
+    width: 50px;
+    background-color: transparent;
+    position: absolute;
+    left: 22px;
+    top: 15.35px;
+    cursor: pointer;
+}

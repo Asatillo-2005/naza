@@ -1,0 +1,93 @@
+.footer-box {
+    padding-top: 60.41px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer-content {
+    padding-top: 29px;
+    padding-bottom: 32.48px;
+    padding-left: 29px;
+    padding-right: 26.9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 233px;
+    border-radius: 30px 30px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.footer-content-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 135px;
+
+    .footer-content-items-things {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 174px;
+
+    }
+}
+
+.footer-content-items-things-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10.9px;
+
+    .footer-content-items-things-item-pages {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+}
+
+.footer-content-items-things-item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 35.78px;
+
+    .footer-content-items-things-item2-servic {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.footer-content-items-things-item2-launguage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    .footer-content-items-things-item2-launguage-text {
+        color: #101010;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: 0.5s linear;
+
+        &:hover {
+            color: #FFA542;
+        }
+    }
+}

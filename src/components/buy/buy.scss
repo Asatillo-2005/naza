@@ -1,0 +1,254 @@
+.buy-box {
+    padding-top: 66px;
+    padding-bottom: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 128.02px;
+}
+
+.buy-content-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 13px;
+}
+
+.buy-content-item1-items1 {
+    width: 633px;
+    height: 218px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding-top: 18px;
+    padding-bottom: 21px;
+    padding-left: 16.41px;
+    padding-right: 28.13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 17px;
+}
+
+.buy-content-items1-item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23.44px;
+}
+
+// ===============================about=============
+
+.buy-content-items-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 12px;
+}
+
+.buy-content-items-about-name {
+    width: 396.211px;
+    color: #1C1C27;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buy-content-items-about-cost11 {
+    width: 396.211px;
+    color: #AAA;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+// =========================================
+
+.buy-content-items1-item2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 326.22px;
+}
+
+.buy-content-items-item2-acor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23.44px;
+}
+
+.buy-content-items-item2-acor-btn-plas {
+    width: 35.167px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FFA542;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buy-content-items-item2-acor-btn-value {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buy-content-items-about-cost {
+    color: #1C1C27;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+// ==========================buy-content-item1-items2===========
+
+
+.buy-content-item1-items2 {
+    width: 633px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 17px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    padding-top: 15px;
+    padding-bottom: 23px;
+    padding-left: 22.27px;
+    padding-right: 26.96px;
+}
+
+.buy-content-item1-items2-title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buy-content-item1-items2-servis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 337.58px;
+}
+
+.buy-content-item1-items2-servis-bring {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 51.58px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buy-content-item1-items2-servis-cost {
+    color: #1C1C27;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buy-content-item1-items2-servis-bring-span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11.72px;
+}
+
+// ===================buy-content-item2=============
+
+.buy-content-item2 {
+    width: 348.98px;
+    height: 114px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buy-content-item2-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding-top: 20px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    .buy-content-item2-all-cost {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.buy-content-item2-all-btn {
+    width: 348.98px;
+    height: 65px;
+    border-radius: 20px;
+    background: #101010;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 14.22px;
+    padding-right: 12.92px;
+}

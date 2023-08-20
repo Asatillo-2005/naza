@@ -1,24 +1,37 @@
-*{
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: sans-serif serif;
+
+body {
+  font-family: sans-serif;
 }
-ul{
-  list-style: none;
+
+ul {
+  list-style-type: none;
 }
-a{
+
+a {
   display: inline-block;
   text-decoration: none;
 }
-img{
-  display:inline-block;
+
+img {
+  display: inline-block;
 }
-.container{
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
   max-width: 100%;
-  width: 1220px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }

@@ -1,0 +1,75 @@
+
+.section-bin{
+    min-height: 100vh;
+    background-image: url("../../assets/img/bin-bin1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bin-box {
+    padding-top: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bin-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+.bin-content-items {
+    width: 633px;
+    height: 218px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 23.44px;
+    padding-top: 18px;
+    padding-bottom: 64px;
+    padding-left: 18.76px;
+    padding-right: 48.06px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+
+    .delet{
+        position: absolute;
+        right: 28.13px;
+        top: 18px;
+    }
+}
+
+.bin-content-items-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    .bin-content-items-about-name {
+        width: 396.211px;
+        color: #1C1C27;
+        font-family: Montserrat;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .bin-content-items-about-cost {
+        width: 396.211px;
+        color: #AAA;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
