@@ -10,6 +10,7 @@ import {NavLink as Link} from "react-router-dom"
 import cards_inner3 from "../../assets/img/cards_inner-11.png"
 import cards_inner4 from "../../assets/svg/cards_inner-bin.svg"
 import Heart from "../../assets/heart.jsx";
+import { language } from "../../localization/localization";
 
 
 function Cards_inner() {
@@ -34,6 +35,7 @@ function Cards_inner() {
             showSuccess()
         })
     }
+    
 
     return (
         <section className="section-cards_inner">

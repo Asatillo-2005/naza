@@ -33,6 +33,7 @@ function Bin() {
             })
     }
 
+    console.log(data);
 
     return (
         <section className="section-bin">
@@ -42,7 +43,6 @@ function Bin() {
                     <div className="bin-content">
                         {
                             data.map((item, index) => {
-                                console.log(item.id);
                                 return (
                                     <div className="bin-content-items" key={item.id}>
                                         <img className="delet" src={bin3} alt="error" onClick={() => onDelet(item.id)} />
