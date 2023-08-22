@@ -38,10 +38,10 @@ function Cardsitem() {
                             data.map((item, index) => {
                                 return (
                                     <Link to={`cards_inner/${item.id}`} key={item.id}>
-                                        <div className="cards-item-content-items" key={item.id}>
-                                            <Link to={"/"}>
+                                        <div className="cards-item-content-items" >
                                             <div className="cards-item-content-items-heart"onClick={()=>onColor(item.id)}><Heart item={color} /></div>
-                                            </Link>
+                                            {/* <Link to={"/"}>
+                                            </Link> */}
                                             <img src={item.img} alt="error" width={"219.608px"} height={"237.451px"} />
                                             <div className="cards-item-content-items-about">
                                                 <div className="cards-item-content-items-about-nc">

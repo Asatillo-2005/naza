@@ -11,20 +11,17 @@ import header5 from "../../assets/svg/header-vector.svg"
 import { memo } from "react"
 
 
-function Header() {
+function Header({lang,change}) {
 
-    const [change, setChange] = useState("en")
     const [bin, setBin] = useState()
-    const [bin1, setBin1] = useState()
 
     useEffect(() => {
         fetch("https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phonee")
             .then((res) => res.json())
             .then((data) =>{
                 setBin(data.length)
-                setBin1(true)
             })
-    },[bin1])
+    },[change])
 
     console.log(bin)
     return (
@@ -37,7 +34,7 @@ function Header() {
                             <div className="header-menu">
                                 <img src={header2} alt="error" />
                                 <p className="header-menu-text">
-                                    Выбрать модель телефона
+                                    {language[lang].header.p}
                                     <img src={header5} alt="error" />
                                 </p>
                             </div>

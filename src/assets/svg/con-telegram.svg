@@ -1,0 +1,20 @@
+<svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Telegram">
+<g id="Card" filter="url(#filter0_d_466_780)">
+<rect x="20" y="20" width="97" height="97" rx="30" fill="white"/>
+</g>
+<path id="Vector" d="M69.1064 87.9C74.2516 87.9 79.1861 85.8561 82.8243 82.2179C86.4625 78.5797 88.5064 73.6452 88.5064 68.5C88.5064 63.3548 86.4625 58.4203 82.8243 54.7821C79.1861 51.1439 74.2516 49.1 69.1064 49.1C63.9612 49.1 59.0268 51.1439 55.3886 54.7821C51.7504 58.4203 49.7064 63.3548 49.7064 68.5C49.7064 73.6452 51.7504 78.5797 55.3886 82.2179C59.0268 85.8561 63.9612 87.9 69.1064 87.9ZM69.1064 92.75C55.7132 92.75 44.8564 81.8933 44.8564 68.5C44.8564 55.1067 55.7132 44.25 69.1064 44.25C82.4997 44.25 93.3564 55.1067 93.3564 68.5C93.3564 81.8933 82.4997 92.75 69.1064 92.75ZM61.5647 71.3372L55.507 69.4482C54.1975 69.048 54.1903 68.1459 55.8005 67.4985L79.403 58.3805C80.7731 57.8227 81.5491 58.5284 81.1053 60.2962L77.0871 79.2597C76.8058 80.6105 75.9934 80.933 74.8658 80.3097L68.6796 75.7313L65.7963 78.5152C65.5005 78.8014 65.2604 79.0463 64.8045 79.1069C64.351 79.17 63.9776 79.0342 63.7035 78.2825L61.5938 71.3203L61.5647 71.3397V71.3372Z" fill="#1C1C27"/>
+</g>
+<defs>
+<filter id="filter0_d_466_780" x="0" y="0" width="137" height="137" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_466_780"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_466_780" result="shape"/>
+</filter>
+</defs>
+</svg>

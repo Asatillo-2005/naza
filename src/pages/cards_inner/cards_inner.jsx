@@ -1,25 +1,23 @@
-import "./cards_inner.scss"
+import { useEffect, useState, useRef } from "react";
+import {NavLink as Link, useParams} from "react-router-dom"
+import { Accordion, AccordionTab } from 'primereact/accordion';
+import { Toast } from 'primereact/toast';
+import { language } from "../../localization/localization";
 import React from 'react';
 import axios from "axios";
-import { Accordion, AccordionTab } from 'primereact/accordion';
-import { useEffect, useState, useRef } from "react";
-import { useParams } from "react-router-dom"
-import { Toast } from 'primereact/toast';
-import {NavLink as Link} from "react-router-dom"
+import "./cards_inner.scss"
 
 import cards_inner3 from "../../assets/img/cards_inner-11.png"
 import cards_inner4 from "../../assets/svg/cards_inner-bin.svg"
 import Heart from "../../assets/heart.jsx";
-import { language } from "../../localization/localization";
 
-
-function Cards_inner() {
+function Cards_inner({lang,setChange}) {
 
     const toast = useRef(null);
     const [getdata, setGetdata] = useState([])
     const { cardsId } = useParams()
     const showSuccess = () => {
-        toast.current.show({ severity: 'success', summary: 'Success', detail: '', life: 2000 });
+        toast.current.show({ severity: 'success', summary: 'Success',  life: 2000 });
     }
     
     useEffect(() => {
@@ -29,10 +27,12 @@ function Cards_inner() {
     }, [])
 
     function onPush(givedata) {
+        setChange(true)
         axios.post(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phonee`, {
             givedata
         }).then((res) => {
             showSuccess()
+            setChange(false)
         })
     }
     
@@ -60,7 +60,7 @@ function Cards_inner() {
                         <div className="cards_inner-content-item2">
                             <div className="cards_inner-content-item2-options">
                                 <Accordion activeIndex={0}>
-                                    <AccordionTab header="Описание и характеристики">
+                                    <AccordionTab header={language[lang].inner.description}>
                                         <div className="m-0">
                                             <p className="cards_inner-content-item2-options">Активное шумоподавление: Нет</p>
                                             <p className="cards_inner-content-item2-options">Вес: 10 гр</p>
@@ -84,11 +84,11 @@ function Cards_inner() {
                             </div>
                             <div className="cards_inner-content-item2-buy">
                                 <Link to={`/buy/${getdata.id}`} >
-                                <button className="cards_inner-content-item2-buy1">Купить!</button>
+                                <button className="cards_inner-content-item2-buy1">{language[lang].inner.buy}</button>
                                 </Link>
                                 <button className="cards_inner-content-item2-bin" onClick={() => {
                                     onPush(getdata)
-                                }}><img src={cards_inner4} alt="error" />Добавить в корзину</button>
+                                }}><img src={cards_inner4} alt="error" />{language[lang].inner.add}</button>
                             </div>
                         </div>
                     </div>
