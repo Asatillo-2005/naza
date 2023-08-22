@@ -51,9 +51,12 @@ export const language = {
         contacts:{
             office:"Наш офис",
             floor:"3 этаж 35 кабинет"
+        },
+        bin:{
+            empty:"Корзина пуста",
+            late:"Но это никогда не поздно исправить",
+            catalog:"В каталог товаров"
         }
-
-
     },
     en: {
         header: {
@@ -106,6 +109,11 @@ export const language = {
        contacts:{
         office:"Our office",
         floor:"3rd floor 35 office"
+    },
+    bin:{
+        empty:"The basket is empty",
+        late:"But it's never too late to fix it",
+        catalog:"To the product catalog"
     }
     }
 }

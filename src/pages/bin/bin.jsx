@@ -60,12 +60,12 @@ function Bin({ lang, setChange }) {
                         <div className="open-container">
                             <img src={bin1} alt="error" />
                             <div className="open-container-text">
-                                <p className="open-container-text1">Корзина пуста</p>
-                                <p className="open-container-text2">Но это никогда не поздно исправить</p>
+                                <p className="open-container-text1">{language[lang].bin.empty}</p>
+                                <p className="open-container-text2">{language[lang].bin.late}</p>
                             </div>
                             <Link to={"/"}>
                             <button className="open-container-btn">
-                                <p className="open-container-btn-text">В каталог товаров</p>
+                                <p className="open-container-btn-text">{language[lang].bin.catalog}</p>
                             </button>
                             </Link>
                         </div>
@@ -114,7 +114,9 @@ function Bin({ lang, setChange }) {
                                     <p className="bin-content-total-text1">{language[lang].buy.total}</p>
                                     <span className="bin-content-total-text-number">₸ 2 927</span>
                                 </div>
+                                <Link to={"/servic"}>
                                 <button className="bin-content-total-btn"><p className="bin-content-total-btn-text">{language[lang].buy.checkout}</p></button>
+                                </Link>
                             </div>
                         </div>
                     </div>
