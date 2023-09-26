@@ -23,7 +23,6 @@ function Header({lang,change}) {
             })
     },[change])
 
-    console.log(bin)
     return (
         <section className="section-header">
             <div className="container">

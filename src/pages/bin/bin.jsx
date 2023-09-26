@@ -16,6 +16,7 @@ function Bin({ lang, setChange }) {
     const [data1, setData] = useState([])
     const [loading, setLoading] = useState()
     const [value, setValue] = useState(1)
+    const [value2, setValue2] = useState(1234)
     const showSuccess = () => {
         toast.current.show({ severity: 'success', summary: 'Success', detail: 'DELET', life: 2000 })
     }
@@ -25,6 +26,7 @@ function Bin({ lang, setChange }) {
             .then((res) => res.json())
             .then((data) => {
                 setData(data)
+                setValue2(data[0].givedata.quality)
             })
     }, [loading])
 
@@ -39,15 +41,25 @@ function Bin({ lang, setChange }) {
             })
     }
 
-    function onPlas() {
-        setValue(value + 1)
+
+    function onPlas(cost , index) {
+        console.log(index);
+        if(index  === index){
+            setValue(value + 1)
+            setValue2(Number(value2) + Number(cost))
+        }
+        else{
+            console.log(false);
+        }
     }
-    function onMinus() {
-        if (value == 1) {
+    function onMinus(narx , inde) {
+
+        if (value == 1  || value2 == 0) {
             console.log("false");
         }
-        else {
+        else if(inde == inde) {
             setValue(value - 1)
+            setValue2(Number(value2) - Number(narx))
         }
     }
 
@@ -75,7 +87,6 @@ function Bin({ lang, setChange }) {
         )
     }
     else {
-        console.log("false");
         return (
             <section className="section-bin">
                 <div className="container">
@@ -97,11 +108,15 @@ function Bin({ lang, setChange }) {
                                                 </div>
                                                 <div className="bin-content-items13">
                                                     <div className="bin-content-items13-btns">
-                                                        <button className="bin-content-items13-btns-plas" onClick={onPlas}>+</button>
+                                                        <button className="bin-content-items13-btns-plas" onClick={()=>{
+                                                            onPlas(item.givedata.quality ,item.givedata.id) 
+                                                            }}>+</button>
                                                         <div className="bin-content-items13-btns-plas-value">{value}</div>
-                                                        <button className="bin-content-items13-btns-plas" onClick={onMinus}>-</button>
+                                                        <button className="bin-content-items13-btns-plas" onClick={()=>{
+                                                            onMinus(item.givedata.quality ,item.givedata.id)
+                                                        }}>-</button>
                                                     </div>
-                                                    <div className="bin-content-items13-values">1234₸</div>
+                                                    <div className="bin-content-items13-values">{value2}₸</div>
                                                 </div>
                                             </div>
                                         )

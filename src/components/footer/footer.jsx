@@ -8,9 +8,6 @@ import footer3 from "../../assets/svg/footer-web.svg"
 
 function Footer({ lang, setLang }) {
 
-    console.log(lang);
-
-
     return (
         <section className="section-footer">
             <div className="container">
