@@ -1,12 +1,16 @@
 import "./footer.scss"
 import { NavLink as Link } from "react-router-dom"
 import { language } from "../../localization/localization"
+import { useState , useRef } from "react"
 
 import footer1 from "../../assets/svg/header-logo.svg"
 import footer2 from "../../assets/svg/footer-lang.svg"
 import footer3 from "../../assets/svg/footer-web.svg"
 
 function Footer({ lang, setLang }) {
+
+    const elColor = useRef()
+    const elColor2 = useRef()
 
     return (
         <section className="section-footer">
@@ -31,8 +35,16 @@ function Footer({ lang, setLang }) {
                                     <span className="footer-content-items-things-item2-servic">{language[lang].footer.service}</span>
                                     <div className="footer-content-items-things-item2-launguage">
                                         <img src={footer2} alt="error" />
-                                        <div className="footer-content-items-things-item2-launguage-text" onClick={() => { setLang("ru") }}>Рус</div>
-                                        <div className="footer-content-items-things-item2-launguage-text" onClick={() => { setLang("en") }}>Eng</div>
+                                        <div className="footer-content-items-things-item2-launguage-text" ref={elColor} onClick={() => {  
+                                        setLang("ru")
+                                        elColor.current.style.color = "#FFA542"
+                                        elColor2.current.style.color = "black"
+                                     }}>Рус</div>
+                                        <div className="footer-content-items-things-item2-launguage-text" ref={elColor2} onClick={() => { 
+                                            setLang("en") 
+                                            elColor2.current.style.color = "#FFA542"
+                                            elColor.current.style.color = "black"
+                                            }}>Eng</div>
                                     </div>
                                 </div>
                             </div>

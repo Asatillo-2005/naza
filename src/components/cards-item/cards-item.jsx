@@ -9,6 +9,7 @@ function Cardsitem() {
 
     const [data, setData] = useState([])
     const [color, setColor] = useState("black")
+    const [give , setGive] = useState()
     const API = "https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone"
 
     async function onFetch() {
@@ -21,11 +22,23 @@ function Cardsitem() {
         onFetch()
     }, [])
 
+
+    useEffect(()=>{
+        data.map((item,index)=>{setGive(item.id)})
+    },[onColor])
+
+
     function onColor(id){
-          fetch(`https://64c9fecab2980cec85c2b76e.mockapi.io/movie/phone/${id}`)
-          .then((res)=>res.json())
-          .then((data)=>setData(data.color))
+        if(id == data.id){
+            setColor('red')
+        }
+        else{
+            console.log("false");
+        }
     }
+
+
+
 
 
     return (
@@ -37,11 +50,11 @@ function Cardsitem() {
                         {
                             data.map((item, index) => {
                                 return (
-                                    <Link to={`cards_inner/${item.id}`} key={item.id}>
-                                        <div className="cards-item-content-items" >
-                                            <div className="cards-item-content-items-heart"onClick={()=>onColor(item.id)}><Heart item={color} /></div>
-                                            {/* <Link to={"/"}>
-                                            </Link> */}
+                                    <div className="cards-item-content-items" key={item.id} >
+                                        <div className="cards-item-content-items-heart" onClick={()=>{
+                                            onColor(index)
+                                            }} ><Heart item={color} /></div>
+                                        <Link to={`cards_inner/${item.id}`} key={item.id}>
                                             <img src={item.img} alt="error" width={"219.608px"} height={"237.451px"} />
                                             <div className="cards-item-content-items-about">
                                                 <div className="cards-item-content-items-about-nc">
@@ -50,8 +63,8 @@ function Cardsitem() {
                                                 </div>
                                                 <div className="cards-item-content-items-about-rating"><img src={cardsitem1} alt="error" />{item.rating}</div>
                                             </div>
-                                        </div>
-                                    </Link>
+                                        </Link>
+                                    </div>
                                 )
                             })
                         }

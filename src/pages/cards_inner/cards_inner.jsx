@@ -36,6 +36,7 @@ function Cards_inner({lang,setChange}) {
         })
     }
     
+    
 
     return (
         <section className="section-cards_inner">
@@ -88,6 +89,7 @@ function Cards_inner({lang,setChange}) {
                                 </Link>
                                 <button className="cards_inner-content-item2-bin" onClick={() => {
                                     onPush(getdata)
+                                    localStorage.setItem('todolist', JSON.stringify(getdata))
                                 }}><img src={cards_inner4} alt="error" />{language[lang].inner.add}</button>
                             </div>
                         </div>

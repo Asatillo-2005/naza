@@ -10,7 +10,7 @@ import buy3 from "../../assets/img/buy-i.png"
 import buy4 from "../../assets/svg/bin-bin.svg"
 import buy5 from "../../assets/img/hero-phone.png"
 
-function Buy({lang}) {
+function Buy({lang , setValue1}) {
 
     const [dara, setDara] = useState([])
     const { buyId } = useParams()
@@ -81,8 +81,8 @@ function Buy({lang}) {
                         </div>
                         <div className="buy-content-item2">
                             <div className="buy-content-item2-all">{language[lang].buy.total} <span className="buy-content-item2-all-cost">{value3}</span></div>
-                            <Link to={'/servic'}>
-                                <button className="buy-content-item2-all-btn">{language[lang].buy.checkout}</button>
+                            <Link to={'/servic'} >
+                                <button className="buy-content-item2-all-btn" onClick={()=>setValue1(value3)}>{language[lang].buy.checkout}</button>
                             </Link>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import servic2 from "../../assets/svg/servis-vector.svg"
 import servic3 from "../../assets/svg/servis-cod.svg"
 import servic4 from "../../assets/svg/servis-visa.svg"
 
-function Servic({lang}) {
+function Servic({ lang, value1 }) {
 
     return (
         <section className="section-servic">
@@ -39,15 +39,15 @@ function Servic({lang}) {
                                     <div className="servic-container-item2-items1-text">
                                         <div className="servic-container-item2-items1-text-div">
                                             <p className="servic-container-item2-items1-text1">{language[lang].sevic.headphone} Apple BYZ S852I</p>
-                                            <span className="servic-container-item2-items1-text11-span">₸ 2 927</span>
+                                            <span className="servic-container-item2-items1-text11-span">₸ {value1}</span>
                                         </div>
                                         <div className="servic-container-item2-items1-text-div">
                                             <p className="servic-container-item2-items1-text1">{language[lang].sevic.delivery}</p>
-                                            <span className="servic-container-item2-items1-text11-span">₸ 2 927</span>
+                                            <span className="servic-container-item2-items1-text11-span">₸ {value1}</span>
                                         </div>
                                         <div className="servic-container-item2-items1-text-div">
                                             <p className="servic-container-item2-items1-text1">{language[lang].sevic.paid}</p>
-                                            <span className="servic-container-item2-items1-text11-span">₸ 2 927</span>
+                                            <span className="servic-container-item2-items1-text11-span">₸ {value1}</span>
                                         </div>
                                     </div>
                                 </div>

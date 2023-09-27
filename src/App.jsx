@@ -18,6 +18,7 @@ function App() {
 
   const[lang , setLang]= useState("en")
   const[change,setChange]= useState()
+  const[value1, setValue1] = useState()
 
   return (
     <>
@@ -26,8 +27,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/cards_inner/:cardsId" element={<Cards_inner lang={lang} setChange={setChange}/>} />
         <Route path="/bin" element={<Bin setChange={setChange} lang={lang}/>}/>
-        <Route path="/buy/:buyId" element={<Buy lang={lang}/>}/>
-        <Route path="/servic" element={<Servic lang={lang}/>}/>
+        <Route path="/buy/:buyId" element={<Buy lang={lang} setValue1={setValue1}/>}/>
+        <Route path="/servic" element={<Servic lang={lang} value1={value1}/>}/>
         <Route path="/done" element={<Done lang={lang}/>}/>
         <Route path="/contacts"element={<Contacts lang={lang}/>}/>
       </Routes>

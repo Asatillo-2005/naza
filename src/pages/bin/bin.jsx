@@ -40,10 +40,9 @@ function Bin({ lang, setChange }) {
                 showSuccess()
             })
     }
-
+          
 
     function onPlas(cost , index) {
-        console.log(index);
         if(index  === index){
             setValue(value + 1)
             setValue2(Number(value2) + Number(cost))
@@ -52,6 +51,7 @@ function Bin({ lang, setChange }) {
             console.log(false);
         }
     }
+    
     function onMinus(narx , inde) {
 
         if (value == 1  || value2 == 0) {
@@ -62,7 +62,6 @@ function Bin({ lang, setChange }) {
             setValue2(Number(value2) - Number(narx))
         }
     }
-
 
     if (data1.length == 0) {
         return (
@@ -95,7 +94,7 @@ function Bin({ lang, setChange }) {
                         <div className="bin-box-content">
                             <div className="bin-content">
                                 {
-                                    data1.map((item, index) => {
+                                    data1.map((item) => {
                                         return (
                                             <div className="bin-content-items" key={item.id}>
                                                 <div className="bin-content-items12">
