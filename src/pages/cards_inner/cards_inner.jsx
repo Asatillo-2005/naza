@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, createContext } from "react";
 import {NavLink as Link, useParams} from "react-router-dom"
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Toast } from 'primereact/toast';
@@ -13,7 +13,7 @@ import Heart from "../../assets/heart.jsx";
 
 function Cards_inner({lang,setChange}) {
 
-    const toast = useRef(null);
+    const toast = useRef(null)
     const [getdata, setGetdata] = useState([])
     const { cardsId } = useParams()
     const showSuccess = () => {
@@ -35,8 +35,6 @@ function Cards_inner({lang,setChange}) {
             setChange(false)
         })
     }
-    
-    
 
     return (
         <section className="section-cards_inner">
@@ -48,10 +46,7 @@ function Cards_inner({lang,setChange}) {
                             <span className="cards_inner-content-item-heart"><Heart /></span>
                             <span className="cards_inner-content-item-lonio"><img src={cards_inner3} alt="error" /></span>
                             <div className="cards_inner-content-item-bg-imgs">
-                                <img src={getdata.bg2} alt="error" />
-                                <img src={getdata.bg3} alt="error" />
-                                <img src={getdata.bg4} alt="error" />
-                                <img src={getdata.bg5} alt="error" />
+                                <img src={getdata.bg1} alt="error" />
                             </div>
                             <div className="cards_inner-content-item-about">
                                 <p className="cards_inner-content-item-about-name">{getdata.name}</p>
@@ -89,7 +84,6 @@ function Cards_inner({lang,setChange}) {
                                 </Link>
                                 <button className="cards_inner-content-item2-bin" onClick={() => {
                                     onPush(getdata)
-                                    localStorage.setItem('todolist', JSON.stringify(getdata))
                                 }}><img src={cards_inner4} alt="error" />{language[lang].inner.add}</button>
                             </div>
                         </div>

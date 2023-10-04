@@ -12,6 +12,7 @@ function Footer({ lang, setLang }) {
     const elColor = useRef()
     const elColor2 = useRef()
 
+
     return (
         <section className="section-footer">
             <div className="container">

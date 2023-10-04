@@ -55,7 +55,7 @@ function Cardsitem() {
                                             onColor(index)
                                             }} ><Heart item={color} /></div>
                                         <Link to={`cards_inner/${item.id}`} key={item.id}>
-                                            <img src={item.img} alt="error" width={"219.608px"} height={"237.451px"} />
+                                            <img className="cards-item-img" src={item.img} alt="error" width={"219.608px"} height={"237.451px"} />
                                             <div className="cards-item-content-items-about">
                                                 <div className="cards-item-content-items-about-nc">
                                                     <p className="cards-item-content-items-about-nc-name">{item.name}</p>

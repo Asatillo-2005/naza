@@ -13,15 +13,17 @@ import Servic from "./pages/servis/servic.jsx"
 import Bin from "./pages/bin/bin.jsx"
 import Done from "./pages/done/done.jsx"
 import Contacts from "./pages/contacts/contacts.jsx"
+import {UserProvider } from "./components/userContext.js"
 
 function App() {
 
-  const[lang , setLang]= useState("en")
+  const[lang , setLang]= useState("ru")
   const[change,setChange]= useState()
   const[value1, setValue1] = useState()
 
   return (
     <>
+    <UserProvider> 
       <Header  lang={lang} change={change} />
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -33,6 +35,7 @@ function App() {
         <Route path="/contacts"element={<Contacts lang={lang}/>}/>
       </Routes>
       <Footer  lang={lang} setLang={setLang} />
+      </UserProvider>
     </>
   )
 }
